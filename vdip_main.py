@@ -13,10 +13,7 @@ from logic.vdip_recv import *
 from logic.vdip_send import *
 from lib.lib_taskman import *
 
-# ----------------------------------------------------------------------------------------------------
-# Function name : vdip_app_stop
-# Function desc : 프로세스 종료 이벤트 수신
-# ----------------------------------------------------------------------------------------------------
+
 def vdip_app_stop(eid, data):
     global _exit_
     if eid == 1:  # 프로세스 종료
@@ -92,10 +89,10 @@ def main():
             log_error("Check connection: " + str(e))
 
 def send_msg(client_socket):
-    # 비공개
+    
 
 def recv_msg(client_socket) :
-    # 비공개
+    
     
 if __name__ == "__main__":
    init_project()
