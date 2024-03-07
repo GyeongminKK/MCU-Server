@@ -12,10 +12,6 @@ from logic.rfid_event import *
 from logic.rfid_command import *
 
 
-# ----------------------------------------------------------------------------------------------------
-# Function name : rfid_app_stop
-# Function desc : 프로세스 종료 이벤트 수신
-# ----------------------------------------------------------------------------------------------------
 def rfid_app_stop(eid, data):
     global _exit_
     if eid == 1:  # 프로세스 종료
@@ -29,10 +25,6 @@ def rfid_app_stop(eid, data):
         print(data)
 
 
-# ----------------------------------------------------------------------------------------------------
-# Function name : main
-# Function desc : RFID Tag Reader 연계 프로세스 Main
-# ----------------------------------------------------------------------------------------------------
 if __name__ == "__main__" :
     app_name = 'rfid_lnk'
     mcu_home = os.environ['MCU_HOME']
