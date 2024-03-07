@@ -60,9 +60,8 @@ def main():
     # RqbbitMq 연결
     mq_init()
 
-    # MCU ip, port설정 MCU <-> VDU, IPU port : 20355
-    mcu_ip = cfg_get_equipment_ip()
-    vdip_port = int(20333)
+    mcu_ip = 
+    vdip_port = 
 
     # 소켓 설정
     lsn_mcu = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
