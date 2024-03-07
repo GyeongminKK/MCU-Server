@@ -1,10 +1,3 @@
-# ====================================================================================================
-# Program :
-# Developer : Straffic
-# Date : 2024.01
-# Description : vdip_main (vdu, ipu 통신 프로세스)
-# ====================================================================================================
-
 import os
 import sys
 import time
@@ -100,11 +93,11 @@ def main():
             log_error("Check connection: " + str(e))
 
 def send_msg(client_socket):
-
+    # 비공개
 
 def recv_msg(client_socket) :
+    # 비공개
     
-
 if __name__ == "__main__":
    init_project()
 
